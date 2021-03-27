@@ -108,3 +108,21 @@ footer {
     color: white;
     text-align: center;
 }
+
+/*media queries*/
+
+@media(min-width: 700px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .content-wrap, #portfolio ul {
+        grid-column: 2/4;
+    }
+
+    #portfolio ul {
+        display: flex;
+        justify-content: space-around;
+    }
+}
