@@ -47,7 +47,6 @@ header nav ul {
     display: inline;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     list-style: none;
 }
 
@@ -61,3 +60,51 @@ header nav ul li {
 }
 
 /*about me section */
+#about-me {
+    background-color: rgb(50, 47, 70);
+    color: white;
+    padding-bottom: 32px;
+}
+
+/*portfolio section*/
+
+#portfolio {
+    padding: 32px 16px 16px;
+}
+
+#portfolio ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#portfolio li {
+    margin: 16px;
+    background-color: white;
+    color: black;
+}
+
+.portfolio-content {
+    padding: 20px;
+}
+
+/* contact section*/
+
+#contact {
+    background-color: dimgrey;
+    color: black;
+    padding: 32px;
+}
+
+#contact ul {
+    list-style: none;
+}
+
+/*footer*/
+
+footer {
+    padding: 32px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
