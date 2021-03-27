@@ -34,7 +34,7 @@ header {
     padding: 20px 35px;
     background-color: darkgrey;
     color: black;
-    position: absolute;
+    position: sticky;
     background-image: url("./images/pexels-photo-160107.jpeg");
     background-position: 100%;
     background-repeat: no-repeat;
