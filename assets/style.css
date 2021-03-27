@@ -28,3 +28,36 @@ p {
     margin: 0;
     padding: 12px 0;
 }
+
+/* header */
+header {
+    padding: 20px 35px;
+    background-color: darkgrey;
+    color: black;
+    position: absolute;
+    background-image: url("./images/pexels-photo-160107.jpeg");
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    z-index: 9999;
+}
+
+header nav ul {
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+#header .content-wrap {
+    padding: 0 20px;
+
+}
+
+/*about me section */
