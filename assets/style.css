@@ -84,6 +84,10 @@ header nav ul li {
     color: black;
 }
 
+.card {
+    border: 2px solid blue;
+}
+
 .portfolio-content {
     padding: 20px;
 }
