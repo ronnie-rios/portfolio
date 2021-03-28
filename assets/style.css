@@ -1,10 +1,9 @@
 :root {
     --bg-color: #a3a89b;
-    --header-color: #39625D;
-    --info-color: rgb(193, 108, 91);
+    --hd-ft-color: #194042;
+    --info-color: #E5E5E5;
     --portfolio-color: #efe6c1;
-    --footer-color: #194042;
-}
+    }
 
 body {
     margin: 0;
@@ -18,17 +17,24 @@ body {
 /* header */
 header {
     padding: 20px 35px;
-    background-color: var(--header-color);
+    background-color: var(--hd-ft-color);
     color: white;
     position: sticky;
      width: 100%;
 }
 
 header nav ul {
-    display: inline;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
+}
+
+header nav ul li a{
+    font-size: 20px;
+    font-style: bold;
+    color: white;
+
 }
 
 /*main section*/
@@ -62,6 +68,7 @@ header nav ul {
     width: 150px;
     height: 150px;
     float: left;
+    padding: 10px;
 }
 
 /*portfolio styling */
@@ -93,7 +100,7 @@ header nav ul {
     height:150px;
 }
 
-img:hover {
+#portfolio img:hover {
     opacity: 0.5;
 }
 /*tool-tip styling*/
@@ -122,13 +129,15 @@ img:hover {
     --scale: 1;
 }
 
-
 /*footer*/
 footer {
     padding: 32px;
-    background-color: var(--footer-color);
+    background-color: var(--hd-ft-color);
     color: white;
     text-align: center;
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
 }
 
 /*media queries*/
@@ -157,12 +166,26 @@ footer {
 
     .card-02 {
         flex: 100%;
-        max-width: 300px
+        max-width: 300px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
 
     .card-03 {
         flex-grow: 2;
-        max-width: 600px;
+        max-width: 800px;
+    }
+@media (min-width: 1200px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
     }
 
+    .card-02 {
+        flex: 1 0;
+    }
+    .card-03 {
+        flex: 2;
+    }
+}
 }
