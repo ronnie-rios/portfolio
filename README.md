@@ -2,7 +2,7 @@
 This is a starting portfolio page for Ronnie Rios. This page will be updated with future projects and styling changes.
 
 ## Technology used:
-* HTMl
+* HTML
 * CSS
 
 ## Contributors:
