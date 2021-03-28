@@ -9,8 +9,7 @@
 
 <body>
 <!--Header-->
-    <header id="header" class="grid">
-        <div class="header-img"></div>
+    <header id="header" class="head">
         <div class="content-wrap">
             <nav>
                 <h2>Navigation</h2>
@@ -23,66 +22,59 @@
         </div>
     </header>
 <!--Main Sections-->
-<!--about me section-->
-    <section id="about-me" class="grid">
-        <div class="content-wrap">
-           <h2 class="content-title">About Me</h2>  
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aperiam, aspernatur nulla, porro voluptatem earum nisi quam repellat, facilis facere mollitia ducimus debitis. Illum doloribus, beatae aliquam sint illo itaque?</p>
-        
-        </div>       
-    </section>
-    
-<!--porftolio section-->
-    <section id="portfolio" class="grid">        
-        <h2 class="content-title">Portfolio</h2>  
-        <ul>
-            <li>
-                <div class="card">
-                    <img src="./assets/images/pexels-fernando-arcos-211122.jpg" alt="Temporary placeholder to put future projects">
-                <div class="portfolio-content">
-                    <h3 class="portfolio-content-title">Title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nisi beatae quis aperiam explicabo ipsa?</p>
-                </div>
-                </div>
-            </li>
-            <li>
-                <div class="card">
-                    <img src="./assets/images/pexels-fernando-arcos-211122.jpg" alt="Temporary placeholder to put future projects">
-                <div class="portfolio-content">
-                    <h3 class="portfolio-content-title">Title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nisi beatae quis aperiam explicabo ipsa?</p>
-                </div>
-                </div>
-            </li>
-            <li>
-                <div class="card">
-                    <img src="./assets/images/pexels-fernando-arcos-211122.jpg" alt="Temporary placeholder to put future projects">
-                <div class="portfolio-content">
-                    <h3 class="portfolio-content-title">Title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nisi beatae quis aperiam explicabo ipsa?</p>
-                </div>
-                </div>
-            </li>
-        </ul>
-        </div>       
-    </section>
 
-<!--contact section-->
-    <aside id="contact" class="grid">
-        <div class="content-wrap">
-          <h2 class="content-title">Contact</h2>
+<!--about me section-->
+<div class="container">
+    <section id="personal-info" class="row">
+        <div id="about-me" class="about-card card-01">
+        <h2 class="content-title">About Me</h2>  
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aperiam, aspernatur nulla, porro voluptatem earum nisi quam repellat, facilis facere mollitia ducimus debitis. Illum doloribus, beatae aliquam sint illo itaque?</p>
+        </div>       
+        <div id="contact" class="contact-card card-01">
+        <h2 class="content-title">Contact</h2>
             <ul>
                 <li><a href="mailto: ronniesmail14@gmail.com">My Email</a></li>
                 <li><a href="https://github.com/ronnie-rios/" target="_blank">GitHub Profile</a></li>
                 <li><a href="https://www.linkedin.com/in/ronnie-rios-9b4447207/" taget="_blank">LinkedIn Profile</a></li>
             </ul>  
         </div>
-    </aside>
+    </section>
 
-<!--footer-->
-    <footer id="footer" class="grid">
-        <div>Portfolio</div>
-        <div>Project by Ronnie Rios</div>
-    </footer>
+    <section id="porfolio-featured" class="row">
+        <article class="card-03">
+            <img src="./assets/images/pexels-fernando-arcos-211122.jpg" alt="Temporary placeholder to put future projects">
+                <div class="portfolio-content">
+                <h3 class="portfolio-content-title">Title</h3>
+                <p>Lorem ipsum dolor sit.</p>
+                </div>
+            </article>
+        </article>
+    </section>
+
+    <section id="portfolio" class="row">
+        <article class="card-02">
+            <img src="./assets/images/pexels-fernando-arcos-211122.jpg" alt="Temporary placeholder to put future projects">
+            <div class="portfolio-content">
+                <h3 class="portfolio-content-title">Title</h3>
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+        </article>
+    
+        <article class="card-02">
+            <img src="./assets/images/pexels-fernando-arcos-211122.jpg" alt="Temporary placeholder to put future projects">
+                <div class="portfolio-content">
+                <h3 class="portfolio-content-title">Title</h3>
+                <p>Lorem ipsum dolor sit.</p>
+                </div> 
+        </article>
+    </section>
+
+   
+</div>
+
+<footer id="footer" class="footer">
+    <div>Portfolio</div>
+    <div>Project by Ronnie Rios</div>
+</footer>
 </body>
 </html>
