@@ -67,15 +67,46 @@ header nav ul {
     border-radius: 5px;
     justify-content: center;
 }
-#portfolio img {
-    width: 100%;
-    height:150px;
-}
 
 .card-03 img {
     width: 100%;
     height:300px;
 }
+#portfolio img {
+    width: 100%;
+    height:150px;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+/*tool-tip styling*/
+.card-02::before, .card-02::after, .card-03::before,
+.card-03::after {
+    --scale: 0;
+    position: absolute;
+    content: '';
+    top: -.25rem;
+    left: 50%;
+    
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+}
+
+.card-02::before, .card-03::before {
+    content: attr(data-tooltip);
+    background-color: #333;
+    border-radius: .25rem;
+    text-align: center;
+    padding: .5rem;
+    width: max-content;
+    max-width: 100%;
+    color: white;
+}
+
+.card-02:hover::before, .card-03:hover::before {
+    --scale: 1;
+}
+
 
 /*footer*/
 footer {
