@@ -96,7 +96,7 @@ header nav ul li a{
 }
  
 
-.card-03 img {
+.card-03 img, .card-02 img {
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%;
@@ -210,4 +210,4 @@ footer {
     .card-03 {
         flex: 2;
     }
-}
+}}
