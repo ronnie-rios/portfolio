@@ -93,11 +93,27 @@ header nav ul li a{
     margin: 10px;
     border-radius: 5px;
     justify-content: center;
+    background-image: url("./images/run-buddy-example.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .card-03 img {
-    width: 100%;
-    height:300px;
+    opacity: 0;
+}
+
+.portfolio-content {
+    width: 180px;
+    background-color: rgba(143, 151, 130, 0.8);
+    border: 2px solid var(--hd-ft-color);
+    padding: 2px;
+    margin: 2px;
+    bottom: 0;
+}
+
+.portfolio-content h3 {
+    font-size: 18px;
 }
 #portfolio img {
     width: 100%;
