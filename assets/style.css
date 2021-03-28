@@ -1,21 +1,27 @@
+:root {
+    --bg-color: #a3a89b;
+    --header-color: #39625D;
+    --info-color: rgb(193, 108, 91);
+    --portfolio-color: #efe6c1;
+    --footer-color: #194042;
+}
+
 body {
     margin: 0;
     padding: 0;
     height:100vh;
     font-family: Arial, Helvetica, sans-serif;
     line-height: normal;
+    background-color: var(--bg-color);
 }
 
 /* header */
 header {
     padding: 20px 35px;
-    background-color: darkgrey;
-    color: black;
+    background-color: var(--header-color);
+    color: white;
     position: sticky;
-    background-position: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
+     width: 100%;
 }
 
 header nav ul {
@@ -36,31 +42,41 @@ header nav ul {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.card-01, .card-02, .card-03 {
+    text-align: left;
+    border-radius: 2px;
+    padding: 10px 10px;
+}
 /*personal info styling*/
 .card-01 {
-    background-color: aqua;
+    background-color: var(--info-color);
     position: relative;
     flex: 1;
     max-width: 300px;
     height: auto;
     margin: 10px;
-    border-radius: 5px;
+}
+
+.about-card img {
+    width: 150px;
+    height: 150px;
+    float: left;
 }
 
 /*portfolio styling */
 .card-02 {
-    background-color: rgb(238, 255, 0);
+    background-color:var(--portfolio-color);
     position: relative;
     flex: 1;
     max-width: 100%;
     height: auto;
     margin: 10px;
-    border-radius: 5px;
 }
 .card-03 {
-    background-color: rgb(100, 3, 32);
+    background-color: var(--portfolio-color);
     position: relative;
-    flex: 1;
+    flex-grow: 2;
     max-width: 100%;
     height: auto;
     margin: 10px;
@@ -88,7 +104,6 @@ img:hover {
     content: '';
     top: -.25rem;
     left: 50%;
-    
     transform: translateX(-50%) translateY(-100%) scale(var(--scale));
 }
 
@@ -111,7 +126,7 @@ img:hover {
 /*footer*/
 footer {
     padding: 32px;
-    background-color: black;
+    background-color: var(--footer-color);
     color: white;
     text-align: center;
 }
@@ -125,7 +140,12 @@ footer {
 
     .card-02 {
         flex: 100%;
-        max-width: 400px
+        max-width: 200px
+    }
+
+    .card-03 {
+        flex-grow: 2;
+        max-width: 400;
     }
 }
 
@@ -137,7 +157,12 @@ footer {
 
     .card-02 {
         flex: 100%;
-        max-width: 600px
+        max-width: 300px
+    }
+
+    .card-03 {
+        flex-grow: 2;
+        max-width: 600px;
     }
 
 }
