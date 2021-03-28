@@ -163,6 +163,8 @@ footer {
 }
 
 /*media queries*/
+
+/*media queries screens of 500px*/
 @media (min-width: 500px) {
     .card-01 {
         flex: 100%;
@@ -179,7 +181,7 @@ footer {
         max-width: 400;
     }
 }
-
+/*media queries screens of 700px*/
 @media (min-width: 700px) {
     .card-01 {
         flex: 100%;
@@ -198,6 +200,8 @@ footer {
         max-width: 800px;
     }
 }
+
+/*media queries screens of 1200px*/
 @media (min-width: 1200px) {
     .container {
         display: flex;
@@ -210,4 +214,4 @@ footer {
     .card-03 {
         flex: 2;
     }
-}}
+}
